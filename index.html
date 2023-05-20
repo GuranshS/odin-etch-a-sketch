@@ -24,7 +24,11 @@
                 <button>Reset</button>
             </div>
             <div>
-                <input type="text" placeholder="Input board size" value="16">
+                <input type="number" 
+                placeholder="Input board size" 
+                value="16" 
+                onchange="changeSize(this.value)"
+                />
                 <button>Select</button>
             </div>
         </div>
