@@ -14,21 +14,24 @@
         <div class="name">
             <h1>Create Your Pixel Art</h1>
         </div>
+        <div class="mode">
+
+        </div>
         <div class="workspace">
             <div class="board">
             </div>
             <div class="buttons">
-                <button>Black</button>
-                <button>White</button>
-                <button>Random</button>
-                <button>Reset</button>
+                <button onclick="changePenColor('black')">Black</button>
+                <button onclick="changePenColor('white')">White</button>
+                <button class="randomButton" onclick="changePenColor('random')">Random</button>
+                <button onclick="resetBoard()">Reset</button>
             </div>
             <div>
-                <input type="number" 
+                <input type="text" 
                 placeholder="Input board size" 
                 value="16" 
                 onchange="changeSize(this.value)"
-                />
+                >
                 <button>Select</button>
             </div>
         </div>
