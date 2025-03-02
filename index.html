@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etch a sketch</title>
+    <title>Etch a Sketch</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -15,25 +15,27 @@
             <h1>Create Your Pixel Art</h1>
         </div>
         <div class="mode">
-
+            Pen is down. Click anywhere to lift the pen.
         </div>
         <div class="workspace">
-            <div class="board">
-            </div>
+            <div class="board"></div>
             <div class="buttons">
                 <button onclick="changePenColor('black')">Black</button>
                 <button onclick="changePenColor('white')">White</button>
                 <button class="randomButton" onclick="changePenColor('random')">Random</button>
                 <button onclick="resetBoard()">Reset</button>
             </div>
-            <div>
+            <div class="input-container">
                 <input type="text" 
-                placeholder="Input board size" 
-                value="16" 
-                onchange="changeSize(this.value)"
-                >
+                       placeholder="Input board size" 
+                       value="16" 
+                       onchange="changeSize(this.value)">
                 <button>Select</button>
+                <div class="info-text">Enter a number between 2 and 100 to change the board size.</div>
             </div>
+        </div>
+        <div class="footer">
+            <p>Created by <a href="https://github.com/guranshs" target="_blank">Guransh Singh</a> | Inspired by The Odin Project</p>
         </div>
     </div>
 </body>
